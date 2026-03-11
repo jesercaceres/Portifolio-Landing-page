@@ -1,0 +1,171 @@
+{
+  "Header": {
+    "title": "Engenharia de Software e Soluções Digitais",
+    "paragraph": "Desenvolvedor Full Stack especializado em criar interfaces modernas, sistemas escaláveis e experiências de usuário memoráveis."
+  },
+  "About": {
+    "paragraph": "Com mais de 2 anos de experiência no ecossistema tech, foco em transformar problemas complexos em produtos digitais simples e eficientes. Minha abordagem une design centrado no usuário com arquitetura de software robusta, garantindo que cada linha de código entregue valor real ao negócio.",
+    "Why": [
+      "Desenvolvimento React & Next.js",
+      "Arquitetura de APIs Node.js",
+      "Design UI/UX Responsivo",
+      "Otimização de Performance"
+    ],
+    "Why2": [
+      "Metodologias Ágeis (Scrum)",
+      "Cloud & Deploy (AWS/Vercel)",
+      "Clean Code & Testes",
+      "SEO & Acessibilidade"
+    ]
+  },
+  "ProcessData": {
+    "Process": [
+      {
+        "title": "1. Reunião de Alinhamento (Briefing)",
+        "text": "Entender a sua necessidade, o seu modelo de negócio e definir os objetivos principais do projeto."
+      },
+      {
+        "title": "2. Planejamento do MVP",
+        "text": "Definição das funcionalidades essenciais para criar a primeira versão do seu projeto de forma rápida e direta ao ponto."
+      },
+      {
+        "title": "3. Desenvolvimento Ágil",
+        "text": "Construção do site com entregas parciais para você acompanhar a evolução em tempo real."
+      },
+      {
+        "title": "4. Entrega e Suporte",
+        "text": "Publicação do projeto (deploy), treinamento básico de uso e garantia de suporte inicial."
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Quanto tempo demora para um site ficar pronto?",
+        "answer": "Depende da complexidade, mas uma Landing Page ou site institucional leva em média de 7 a 14 dias úteis."
+      },
+      {
+        "question": "Vocês oferecem manutenção após a entrega?",
+        "answer": "Sim! Ofereço planos de manutenção mensal para manter seu site atualizado, seguro e com backups em dia."
+      },
+      {
+        "question": "O site vai funcionar bem no celular?",
+        "answer": "Com certeza. 100% dos projetos são desenvolvidos com design responsivo (Mobile-First) para funcionar perfeitamente em qualquer tela."
+      }
+    ]
+  },
+  "Services": [
+    {
+      "icon": "fa fa-code",
+      "name": "Desenvolvimento Web",
+      "text": "Criação de sites e aplicações web modernas utilizando as tecnologias mais recentes do mercado como React e TypeScript."
+    },
+    {
+      "icon": "fa fa-cart-plus",
+      "name": "E-commerce",
+      "text": "Implementação de lojas virtuais completas, com integração de pagamentos, gestão de estoque e foco em conversão."
+    },
+    {
+      "icon": "fa fa-mobile",
+      "name": "Apps Mobile",
+      "text": "Desenvolvimento de aplicativos híbridos (iOS e Android) com alta performance e experiência nativa."
+    },
+    {
+      "icon": "fa fa-database",
+      "name": "Back-end & APIs",
+      "text": "Construção de servidores seguros, bancos de dados otimizados e APIs RESTful para integração de sistemas."
+    },
+    {
+      "icon": "fa fa-rocket",
+      "name": "Otimização de Sites",
+      "text": "Melhoria de velocidade de carregamento e técnicas de SEO para colocar seu projeto no topo das buscas do Google."
+    },
+    {
+      "icon": "fa fa-paint-brush",
+      "name": "Design de Interface",
+      "text": "Criação de protótipos e interfaces intuitivas focadas na jornada do usuário e na identidade da sua marca."
+    }
+  ],
+  "Experience": [
+    {
+      "title": "Fundador",
+      "company": "Cáceres Tech",
+      "date": "2026 - Presente",
+      "description": "Fundação de consultoria focada em soluções tecnológicas sob medida. Liderança no desenvolvimento ponta a ponta de software, arquitetura de sistemas e entrega de valor para clientes."
+    },
+    {
+      "title": "Google Cloud Associate Cloud Engineer",
+      "company": "Google Cloud",
+      "date": "2026 - Presente",
+      "description": "Aprimoramento em arquitetura cloud, infraestrutura escalável, implantação de aplicações e gerenciamento de serviços na nuvem do Google (GCP)."
+    },
+    {
+      "title": "Desenvolvedor Full Stack",
+      "company": "Freelance",
+      "date": "2026",
+      "description": "Desenvolvimento full stack do web portal oficial para o MMORPG 'Old World Last Chaos'. Construção de interfaces interativas dinâmicas e integração com APIs robustas de back-end."
+    },
+    {
+      "title": "IT Analyst",
+      "company": "Monks",
+      "date": "2025",
+      "description": "Foco em engenharia de processos e desenvolvimento de automações para otimização de fluxos de trabalho e ganho de eficiência técnica operacional."
+    },
+    {
+      "title": "Formado em Análise e Desenvolvimento de Sistemas",
+      "company": "Facens",
+      "date": "2024 (Concluído)",
+      "description": "Formação com forte base em engenharia de software, modelagem de banco de dados, arquitetura de sistemas e metodologias ágeis de desenvolvimento."
+    }
+  ],
+  "Audience": [
+    {
+      "title": "Pequenas Empresas e Comércios Locais",
+      "text": "Precisa de uma vitrine digital profissional (site institucional ou landing page) para atrair mais clientes na sua região e se destacar da concorrência no Google.",
+      "icon": "fa fa-building"
+    },
+    {
+      "title": "Empreendedores e Profissionais Liberais",
+      "text": "Deseja alavancar sua autoridade pessoal (advogado, médico, consultor) com um portfólio digital ou plataforma de agendamento online.",
+      "icon": "fa fa-user-plus"
+    },
+    {
+      "title": "Agências de Marketing (Parceria Técnica)",
+      "text": "Sua agência fecha contratos de design, tráfego ou SEO e precisa de um parceiro técnico e de confiança para desenvolver o código com agilidade.",
+      "icon": "fa fa-bullhorn"
+    },
+    {
+      "title": "Startups em Fase Inicial",
+      "text": "Tem uma ideia inovadora e precisa construir rapidamente a primeira versão do produto (MVP) para testar no mundo real, sem gastar uma fortuna.",
+      "icon": "fa fa-rocket"
+    }
+  ],
+  "Contact": {
+    "address": "Rua Pedro Rodrigues Ribeiro, Sorocaba- SP.",
+    "phone": "+55 (15) 998617010",
+    "email": "cjeser99@gmail.com",
+    "facebook": "facebook.com/seuusuario",
+    "twitter": "twitter.com/seuusuario",
+    "youtube": "youtube.com/seuchannel"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-check-circle",
+      "title": "Alta Performance",
+      "text": "Aplicações leves que carregam instantaneamente em qualquer dispositivo ou conexão."
+    },
+    {
+      "icon": "fa fa-lock",
+      "title": "Segurança",
+      "text": "Implementação das melhores práticas de segurança para proteção de dados e usuários."
+    },
+    {
+      "icon": "fa fa-refresh",
+      "title": "Escalabilidade",
+      "text": "Sistemas prontos para crescer conforme a demanda do seu negócio aumenta."
+    },
+    {
+      "icon": "fa fa-heart",
+      "title": "Suporte Dedicado",
+      "text": "Acompanhamento pós-entrega para garantir que tudo funcione perfeitamente."
+    }
+  ]
+}

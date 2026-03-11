@@ -1,0 +1,305 @@
+/* Correção de borda da imagem do About */
+#about img {
+  border-radius: 20px; /* Reduzido de 300px para um visual mais moderno, ou use 50% para círculo */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Espaço extra no topo da seção Features para desgrudar do hero */
+#features {
+  padding-top: 4rem;
+}
+
+/* --- MEDIA QUERIES DE RESPONSIVIDADE --- */
+
+/* Ajustes para Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  .intro h1 {
+    font-size: 60px;
+  }
+  .intro-text {
+    font-size: 3rem !important;
+  }
+  #about img {
+    margin-bottom: 30px;
+  }
+}
+
+/* Ajustes para Celulares (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Reset de larguras que estavam quebrando o layout */
+  #features, #about, #services, #testimonials, #team, #contact, #footer, #portfolio {
+    width: 100% !important;
+    padding: 60px 0;
+  }
+
+  /* Features: mais espaço no topo para desgrudar do hero */
+  #features {
+    padding-top: 4rem;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  /* Header / Intro */
+  #header {
+    padding-top: 80px; /* espaço extra para compensar a navbar fixa */
+  }
+
+  .intro {
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem; /* espaço extra abaixo do botão */
+    height: auto;
+    min-height: auto;
+  }
+
+  .intro-text {
+    font-size: 2.2rem !important;
+    padding: 0 15px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  /* Ajuste de ícones */
+  #services i.fa, #features i.fa {
+    width: 80px;
+    height: 80px;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  /* Grid de Time e Features */
+  .col-xs-6 {
+    width: 100%; /* Empilha itens em telas muito pequenas se necessário */
+    margin-bottom: 30px;
+  }
+}
+
+/* iPhone XR e similares (até ~430px de largura) */
+@media (max-width: 430px) {
+  #header {
+    padding-top: 72px;
+  }
+
+  .intro {
+    padding-top: 5.5rem;
+    padding-bottom: 3.75rem; /* ligeiramente mais espaço embaixo no XR */
+  }
+
+  .intro-text {
+    font-size: 1.75rem !important;
+    padding-top: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    padding: 16px 12px;
+    padding-top: 1.25rem;
+  }
+
+  .btnDiv {
+    margin-top: 1.25rem !important;
+  }
+}
+
+/* Ajustes para telas muito pequenas (iPhone SE, etc) */
+@media (max-width: 480px) {
+  #header {
+    padding-top: 90px;
+  }
+
+  .intro h1 {
+    font-size: 32px !important;
+  }
+  .intro-text {
+    font-size: 1.8rem !important;
+  }
+  .btn-custom {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* --- PROCESS SECTION --- */
+.process-step {
+  padding: 30px 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  min-height: 250px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.process-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  border-color: #eee;
+  background: #ffffff;
+}
+
+.process-step-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 20px rgba(99, 114, 255, 0.4);
+}
+
+.process-step h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.process-step p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* --- FAQ SECTION --- */
+.faq-panel {
+  text-align: left;
+  margin-bottom: 15px !important;
+  border: 1px solid #eee !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-panel:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
+}
+
+.faq-panel .panel-heading {
+  background: #fff !important;
+  padding: 20px 25px !important;
+  border-bottom: none !important;
+  border-radius: 8px !important;
+}
+
+.faq-panel .panel-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.faq-panel .panel-title a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-panel .panel-title a:hover {
+  color: #6372ff;
+}
+
+.faq-panel .panel-collapse {
+  background: #fff;
+}
+
+.faq-panel .panel-body {
+  color: #666;
+  padding: 0 25px 20px 25px !important;
+  border-top: none !important;
+  line-height: 1.6;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  color: #6372ff;
+  font-size: 14px;
+}
+
+.faq-panel a[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* --- AUDIENCE SECTION --- */
+.audience-card {
+  padding: 40px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 15px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  min-height: 280px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.audience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: transparent;
+}
+
+.audience-card:hover::before {
+  opacity: 1;
+}
+
+.audience-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(99, 114, 255, 0.1);
+  color: #6372ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto 25px;
+  transition: all 0.4s ease;
+}
+
+.audience-card:hover .audience-icon {
+  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(99, 114, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.audience-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.audience-card p {
+  color: #666;
+  font-size: 14.5px;
+  line-height: 1.7;
+}
