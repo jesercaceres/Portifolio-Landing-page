@@ -266,6 +266,7 @@ a:focus,
 }
 /* Features Section */
 #features {
+  padding: 120px 0;
   background: #f6f6f6;
 }
 #features i.fa {
