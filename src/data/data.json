@@ -56,7 +56,7 @@
     {
       "icon": "fa fa-code",
       "name": "Desenvolvimento Web",
-      "text": "Criação de sites e aplicações web modernas utilizando as tecnologias mais recentes do mercado como React e TypeScript."
+      "text": "Criação de sites e aplicações web modernas utilizando as tecnologias mais recentes do mercado."
     },
     {
       "icon": "fa fa-cart-plus",
@@ -89,7 +89,7 @@
       "title": "Fundador",
       "company": "Cáceres Tech",
       "date": "2026 - Presente",
-      "description": "Fundação de consultoria focada em soluções tecnológicas sob medida. Liderança no desenvolvimento ponta a ponta de software, arquitetura de sistemas e entrega de valor para clientes."
+      "description": "Fundação de consultoria focada em soluções tecnológicas sob medida."
     },
     {
       "title": "Google Cloud Associate Cloud Engineer",
@@ -101,13 +101,13 @@
       "title": "Desenvolvedor Full Stack",
       "company": "Freelance",
       "date": "2026",
-      "description": "Desenvolvimento full stack do web portal oficial para o MMORPG 'Old World Last Chaos'. Construção de interfaces interativas dinâmicas e integração com APIs robustas de back-end."
+      "description": "Desenvolvimento Full Stack do Web Portal oficial para o MMORPG Old World Last Chaos"
     },
     {
       "title": "IT Analyst",
       "company": "Monks",
       "date": "2025",
-      "description": "Foco em engenharia de processos e desenvolvimento de automações para otimização de fluxos de trabalho e ganho de eficiência técnica operacional."
+      "description": "Foco em engenharia de processos e desenvolvimento de automações para otimização de fluxos de trabalho"
     },
     {
       "title": "Formado em Análise e Desenvolvimento de Sistemas",
@@ -119,22 +119,22 @@
   "Audience": [
     {
       "title": "Pequenas Empresas e Comércios Locais",
-      "text": "Precisa de uma vitrine digital profissional (site institucional ou landing page) para atrair mais clientes na sua região e se destacar da concorrência no Google.",
+      "text": "Leve sua empresa para o digital com profissionalismo. Obtenha um site que gera credibilidade e atrai o público da sua região.",
       "icon": "fa fa-building"
     },
     {
       "title": "Empreendedores e Profissionais Liberais",
-      "text": "Deseja alavancar sua autoridade pessoal (advogado, médico, consultor) com um portfólio digital ou plataforma de agendamento online.",
+      "text": "Destaque sua experiência no mercado. Adquira uma plataforma digital que consolida sua autoridade e profissionaliza seu atendimento.",
       "icon": "fa fa-user-plus"
     },
     {
       "title": "Agências de Marketing (Parceria Técnica)",
-      "text": "Sua agência fecha contratos de design, tráfego ou SEO e precisa de um parceiro técnico e de confiança para desenvolver o código com agilidade.",
+      "text": "Sua agência foca em Design, tráfego ou SEO? Conte com um parceiro técnico para escalar entregas e garantir a performance dos seus projetos.",
       "icon": "fa fa-bullhorn"
     },
     {
       "title": "Startups em Fase Inicial",
-      "text": "Tem uma ideia inovadora e precisa construir rapidamente a primeira versão do produto (MVP) para testar no mundo real, sem gastar uma fortuna.",
+      "text": "Valide seu modelo de negócio com agilidade. Obtenha a tecnologia certa para lançar seu MVP e conquistar seus primeiros usuários e investidores.",
       "icon": "fa fa-rocket"
     }
   ],

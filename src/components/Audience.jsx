@@ -6,9 +6,6 @@ export const Audience = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Para Quem É Meu Trabalho?</h2>
-          <p>
-            Desenvolvo soluções sob medida para negócios que precisam escalar no digital com qualidade e precisão.
-          </p>
         </div>
         <div className="row">
           {props.data
