@@ -1,34 +1,47 @@
-# React JS Landing Page Template
+# Portfólio Jéser Cáceres 👨‍💻
 
-**
+Bem-vindo ao repositório do meu portfólio pessoal e landing page!
 
-# 🛎️🛎️ Good news! New & improved [V2](https://github.com/issaafalkattan/react-landing-page-template-2021) is out  
+## 🎯 Intuito do Projeto
 
-**
+Este projeto tem como objetivo principal apresentar o meu trabalho, habilidades e projetos de forma clara, moderna e objetiva para recrutadores, clientes e a comunidade tech. 
 
+A página serve como um currículo interativo e um canal direto de contato (via WhatsApp), focado em conversão de oportunidades e geração de orçamentos. 
 
-### <a href="https://react-landing-page-template-93ne.vercel.app/">LIVE DEMO</a> 
+Aqui você poderá encontrar:
+- Uma visão geral da minha trajetória;
+- Meus principais projetos e experiências;
+- Informações de como entrar em contato comigo rapidamente.
 
-## Description
-This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-All 'visual' data can be easily modified by changing the data.json file.
+## 🛠️ Tecnologias Utilizadas
 
-## Make it Yours!
-### 1. Preps
-You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
+Este projeto foi construído utilizando:
+- **React.js**: Biblioteca principal para a construção das interfaces.
+- **Bootstrap / CSS Customizado**: Para um design responsivo e estruturado.
+- **FontAwesome**: Para ícones visuais (redes sociais, contato, etc).
 
-### 2. Clone Files
-After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
-### 3. Add your own data 
-Change the data in the ```data.json``` file as well as add any images to ```public/img/```
-You can also change styles by modifying the ```public/css``` files.
-If you need the contact form to work, you also need to create an EmailJS account, and modify the ```src/components/contact.jsx``` file to replace your own service ID, template ID and Public Key
+## 🚀 Como visualizar o projeto
 
-## Like this project?
-<a href="https://www.buymeacoffee.com/issaaf">Buy my a coffee ☕️</a>
+### Requisitos
+- [Node.js](https://nodejs.org/) instalado na máquina.
 
-## Credits
-##### Free CSS 
-<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
+### Executando localmente
 
-##### Issaaf kattan
+1. Clone o repositório:
+```bash
+git clone https://github.com/jesercaceres/Portifolio-Landing-page.git
+```
+
+2. Acesse a pasta do projeto e instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
+O projeto estará rodando no seu navegador no endereço: `http://localhost:3000`.
+
+---
+Feito com ☕ e código por [Jéser Cáceres](https://github.com/jesercaceres).
