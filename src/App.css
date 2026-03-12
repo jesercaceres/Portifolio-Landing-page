@@ -50,30 +50,56 @@
 
   /* Header / Intro */
   #header {
-    padding-top: 80px;
-    /* espaço extra para compensar a navbar fixa */
+    /* Deixe o hero (com background) controlar o offset da navbar fixa no mobile. */
+    padding-top: 0;
   }
 
   .intro {
-    padding-top: 6.5rem;
-    padding-bottom: 3.5rem;
-    /* espaço extra abaixo do botão */
     height: auto;
-    /* No mobile, o hero não pode virar só "altura do conteúdo". */
     box-sizing: border-box;
-    min-height: 100vh;
-    min-height: 100svh;
+    /* Evita "hero gigante" em telas altas, mas ainda garante espaço em telas pequenas. */
+    min-height: clamp(520px, 78vh, 720px);
+    min-height: clamp(520px, 78svh, 720px);
+    /* Navbar é fixed-top: empurra o conteúdo para baixo sem criar faixa branca acima do background. */
+    padding-top: calc(72px + env(safe-area-inset-top) + clamp(16px, 4vh, 28px));
+    padding-bottom: clamp(20px, 6vh, 44px);
+    justify-content: center;
+    background-position: center;
   }
 
   .intro-text {
     font-size: 2.2rem !important;
     padding: 0 15px;
+    margin: 0 auto;
   }
 
   .subtitle {
     font-size: 16px;
-    padding: 20px 15px;
+    padding: 0 15px;
     max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Controle de espaçamento só no mobile: título, descrição e botão */
+  #header .intro .col-md-8.col-md-offset-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: clamp(10px, 2.5vh, 22px);
+  }
+
+  #header .intro-text {
+    margin: 0;
+  }
+
+  #header .subtitle {
+    margin: 0;
+  }
+
+  #header .btnDiv {
+    /* Aumenta a distância entre descrição e botão (sem mexer no desktop). */
+    margin-top: clamp(14px, 4vh, 48px) !important;
   }
 
   /* Ajuste de ícones */
@@ -105,29 +131,21 @@
 /* iPhone XR e similares (até ~430px de largura) */
 @media (max-width: 430px) {
   #header {
-    padding-top: 72px;
-  }
-
-  .intro {
-    padding-top: 5.5rem;
-    padding-bottom: 3.75rem;
-    /* ligeiramente mais espaço embaixo no XR */
+    padding-top: 0;
   }
 
   .intro-text {
     font-size: 1.75rem !important;
-    padding-top: 1.5rem;
     line-height: 1.25;
   }
 
   .subtitle {
     font-size: 15px;
-    padding: 16px 12px;
-    padding-top: 1.25rem;
+    padding: 0 12px;
   }
 
   .btnDiv {
-    margin-top: 1.25rem !important;
+    margin-top: clamp(20px, 5.5vh, 72px) !important;
   }
 
   #process,
@@ -139,7 +157,7 @@
 /* Ajustes para telas muito pequenas (iPhone SE, etc) */
 @media (max-width: 480px) {
   #header {
-    padding-top: 90px;
+    padding-top: 0;
   }
 
   .intro h1 {
