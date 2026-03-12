@@ -687,7 +687,10 @@ label {
   .intro {
     padding-top: 7rem;
     height: auto;
-    min-height: auto;
+    /* No mobile, o hero não pode virar só "altura do conteúdo". */
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-height: 100svh;
   }
 
   .intro-text {
