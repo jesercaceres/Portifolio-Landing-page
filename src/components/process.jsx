@@ -2,7 +2,7 @@ import React from "react";
 
 export const Process = (props) => {
   return (
-    <div id="process" className="text-center" style={{ padding: "100px 0", background: "#ffffff" }}>
+    <div id="process" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Como Funciona</h2>

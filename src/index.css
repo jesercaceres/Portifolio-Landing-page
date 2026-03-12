@@ -16,6 +16,6 @@ html, body {
   scroll-behavior: smooth !important;
 }
 
-#features, #about, #services, #portfolio, #testimonials, #team, #contact, #root {
+#features, #about, #services, #portfolio, #testimonials, #team, #contact, #root, #process, #experience, #audience {
   scroll-margin-top: 80px !important;
 }

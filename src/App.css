@@ -1,6 +1,7 @@
 /* Correção de borda da imagem do About */
 #about img {
-  border-radius: 20px; /* Reduzido de 300px para um visual mais moderno, ou use 50% para círculo */
+  border-radius: 20px;
+  /* Reduzido de 300px para um visual mais moderno, ou use 50% para círculo */
   max-width: 100%;
   height: auto;
 }
@@ -13,9 +14,11 @@
   .intro h1 {
     font-size: 60px;
   }
+
   .intro-text {
     font-size: 3rem !important;
   }
+
   #about img {
     margin-bottom: 30px;
   }
@@ -23,8 +26,15 @@
 
 /* Ajustes para Celulares (max-width: 768px) */
 @media (max-width: 768px) {
+
   /* Reset de larguras que estavam quebrando o layout */
-  #features, #about, #services, #contact, #footer {
+  #features,
+  #about,
+  #services,
+  #contact,
+  #footer,
+  #process,
+  #audience {
     width: 100% !important;
     padding: 60px 0;
   }
@@ -40,12 +50,14 @@
 
   /* Header / Intro */
   #header {
-    padding-top: 80px; /* espaço extra para compensar a navbar fixa */
+    padding-top: 80px;
+    /* espaço extra para compensar a navbar fixa */
   }
 
   .intro {
     padding-top: 6.5rem;
-    padding-bottom: 3.5rem; /* espaço extra abaixo do botão */
+    padding-bottom: 3.5rem;
+    /* espaço extra abaixo do botão */
     height: auto;
     min-height: auto;
   }
@@ -62,7 +74,8 @@
   }
 
   /* Ajuste de ícones */
-  #services i.fa, #features i.fa {
+  #services i.fa,
+  #features i.fa {
     width: 80px;
     height: 80px;
     padding: 20px 0;
@@ -71,9 +84,19 @@
 
   /* Grid de Time e Features */
   .col-xs-6 {
-    width: 100%; /* Empilha itens em telas muito pequenas se necessário */
+    width: 100%;
+    /* Empilha itens em telas muito pequenas se necessário */
     margin-bottom: 30px;
   }
+
+  .process-step {
+    min-height: auto;
+  }
+
+  .audience-card {
+    min-height: auto;
+  }
+
 }
 
 /* iPhone XR e similares (até ~430px de largura) */
@@ -84,7 +107,8 @@
 
   .intro {
     padding-top: 5.5rem;
-    padding-bottom: 3.75rem; /* ligeiramente mais espaço embaixo no XR */
+    padding-bottom: 3.75rem;
+    /* ligeiramente mais espaço embaixo no XR */
   }
 
   .intro-text {
@@ -102,6 +126,11 @@
   .btnDiv {
     margin-top: 1.25rem !important;
   }
+
+  #process,
+  #audience {
+    padding: 50px 0;
+  }
 }
 
 /* Ajustes para telas muito pequenas (iPhone SE, etc) */
@@ -113,9 +142,11 @@
   .intro h1 {
     font-size: 32px !important;
   }
+
   .intro-text {
     font-size: 1.8rem !important;
   }
+
   .btn-custom {
     padding: 12px 25px;
     font-size: 14px;
@@ -128,7 +159,7 @@
   background: #f9f9f9;
   border-radius: 12px;
   margin: 15px 0;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   min-height: 250px;
   transition: all 0.3s ease;
   border: 1px solid transparent;
@@ -136,7 +167,7 @@
 
 .process-step:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   border-color: #eee;
   background: #ffffff;
 }
@@ -174,14 +205,14 @@
   text-align: left;
   margin-bottom: 15px !important;
   border: 1px solid #eee !important;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02) !important;
   border-radius: 8px !important;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .faq-panel:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
 }
 
 .faq-panel .panel-heading {

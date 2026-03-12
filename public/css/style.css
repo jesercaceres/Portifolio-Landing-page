@@ -228,8 +228,6 @@ a:focus,
 }
 
 .btnDiv{
-  position: absolute;
-  bottom: 10px;       /* Distância do fundo */
   width: 100%;
   text-align: center;
   color: #0e0101;
@@ -318,7 +316,8 @@ a:focus,
   padding-right: 8px;
 }
 #about img {
-  width: 520px;
+  max-width: 100%;
+  height: auto;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
@@ -374,6 +373,16 @@ a:focus,
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
+}
+/* Process Section */
+#process {
+  padding: 100px 0;
+  background: #ffffff;
+}
+/* Audience Section */
+#audience {
+  padding: 100px 0;
+  background: #ffffff;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
@@ -660,8 +669,18 @@ label {
   #testimonials,
   #team,
   #contact,
-  #portfolio {
+  #portfolio,
+  #process,
+  #audience {
     padding: 60px 0;
+  }
+
+  .process-step {
+    min-height: auto;
+  }
+
+  .audience-card {
+    min-height: auto;
   }
 
   /* Header / Hero */

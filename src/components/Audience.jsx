@@ -2,7 +2,7 @@ import React from "react";
 
 export const Audience = (props) => {
   return (
-    <div id="audience" className="text-center" style={{ padding: "100px 0", background: "#ffffff" }}>
+    <div id="audience" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Para Quem É Meu Trabalho?</h2>
