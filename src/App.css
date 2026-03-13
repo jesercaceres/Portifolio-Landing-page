@@ -7,6 +7,14 @@
 }
 
 
+#contact {
+  text-align: center;
+}
+
+.about-text{
+  text-align: center;
+}
+
 /* --- MEDIA QUERIES DE RESPONSIVIDADE --- */
 
 /* Ajustes para Tablets (max-width: 991px) */
@@ -36,13 +44,32 @@
   #process,
   #audience {
     width: 100% !important;
-    padding: 60px 0;
+    /* Um único padrão de padding no mobile para evitar conflito com o template */
+    padding: clamp(24px, 5vh, 44px) 0 !important;
   }
 
-  /* Features: mais espaço no topo para desgrudar do hero */
+  /* --- CORREÇÃO DO CONFLITO DE ESPAÇAMENTO ENTRE FEATURES E ABOUT --- */
   #features {
-    padding-top: 4rem;
+    padding-top: clamp(32px, 7vh, 64px) !important;
+    padding-bottom: 0 !important; /* Força zero padding embaixo */
   }
+
+  #about {
+    padding-top: 0 !important; /* Força zero padding em cima */
+  }
+
+  /* Grid de Time e Features */
+  .col-xs-6 {
+    width: 100%;
+    /* Empilha itens em telas muito pequenas se necessário */
+    margin-bottom: 30px;
+  }
+
+  /* Remove a margem fantasma do último item do Features */
+  #features .col-xs-6:last-child {
+    margin-bottom: 0 !important; 
+  }
+  /* ----------------------------------------------------------------- */
 
   .section-title {
     margin-bottom: 40px;
@@ -111,13 +138,6 @@
     font-size: 30px;
   }
 
-  /* Grid de Time e Features */
-  .col-xs-6 {
-    width: 100%;
-    /* Empilha itens em telas muito pequenas se necessário */
-    margin-bottom: 30px;
-  }
-
   .process-step {
     min-height: auto;
   }
@@ -156,6 +176,27 @@
 
 /* Ajustes para telas muito pequenas (iPhone SE, etc) */
 @media (max-width: 480px) {
+  /* Em celulares, reduza o padding vertical das seções (no tablet pode ser maior). */
+  #features,
+  #about,
+  #services,
+  #contact,
+  #footer,
+  #process,
+  #audience {
+    padding: 24px 0 !important;
+  }
+
+  /* Reforço de correção para telas menores ainda */
+  #features {
+    padding-top: 32px !important;
+    padding-bottom: 0 !important;
+  }
+
+  #about {
+    padding-top: 0 !important;
+  }
+
   #header {
     padding-top: 0;
   }

@@ -664,7 +664,6 @@ label {
 
   /* Seções com menos padding para caber melhor em telas pequenas */
   #features,
-  #about,
   #services,
   #testimonials,
   #team,
@@ -672,7 +671,11 @@ label {
   #portfolio,
   #process,
   #audience {
-    padding: 60px 0;
+    padding: 44px 0;
+  }
+
+  #about {
+    padding: 44px 0;
   }
 
   .process-step {

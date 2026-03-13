@@ -10,7 +10,7 @@ export const About = (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>Quem sou</h2>
+              <h2>Quem sou eu</h2>
               <p>{props.data ? props.data.paragraph : "Carregando..."}</p>
               <h3>Por que me escolher?</h3>
               <div className="list-style">

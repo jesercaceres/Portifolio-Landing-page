@@ -7,7 +7,6 @@ export const Experience = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Trajetória</h2>
-          <p>Minha jornada acadêmica e profissional até aqui.</p>
         </div>
         <div className="row">
           <div className="timeline">
