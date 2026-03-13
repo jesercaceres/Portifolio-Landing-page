@@ -3,20 +3,63 @@
   --experience-marker-ring: 1px;
   padding: 100px 0;
   background: #f6f6f6;
+  
 }
 
 #experience .section-title {
   margin-bottom: 60px;
 }
 
-#experience .vertical-timeline {
+#experience .experience-container {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  #experience .experience-container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  #experience .experience-container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #experience .experience-container {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #experience .experience-container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #experience .experience-container {
+    max-width: 1440px;
+  }
+}
+
+#experience .experience-timeline-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+#experience .experience-timeline {
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding-top: 10px;
 }
 
-#experience .vertical-timeline::before {
+#experience .experience-timeline::before {
   background: #e0e0e0;
 }
 
@@ -64,6 +107,10 @@
 }
 
 @media (min-width: 1170px) {
+  #experience .experience-timeline.vertical-timeline--two-columns {
+    width: 100%;
+  }
+
   #experience .vertical-timeline--two-columns .vertical-timeline-element-icon {
     left: 50%;
     margin-left: calc(var(--experience-marker-size) / -2);
@@ -102,7 +149,7 @@
     --experience-marker-ring: 2px;
   }
 
-  #experience .vertical-timeline {
+  #experience .experience-timeline {
     padding-left: 0;
   }
 
