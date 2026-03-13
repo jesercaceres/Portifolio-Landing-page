@@ -233,6 +233,10 @@ a:focus,
   width: 100%;
   text-align: center;
   color: #0e0101;
+  @media (min-width: 1440px) {
+  padding-top: 100px;
+}
+  
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
