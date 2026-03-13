@@ -1,4 +1,6 @@
 import React from "react";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import "./experience.css";
 
 export const Experience = (props) => {
@@ -9,21 +11,24 @@ export const Experience = (props) => {
           <h2>Trajetória</h2>
         </div>
         <div className="row">
-          <div className="timeline">
-            {props.data
-              ? props.data.map((d, i) => (
-                  <div key={`${d.title}-${i}`} className="timeline-item">
-                    <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-                      <h3>{d.title}</h3>
-                      <h4>{d.company}</h4>
-                      <span className="timeline-date">{d.date}</span>
-                      <p>{d.description}</p>
-                    </div>
-                  </div>
-                ))
-              : "loading"}
-          </div>
+          {props.data ? (
+            <VerticalTimeline className="experience-timeline">
+              {props.data.map((d, i) => (
+                <VerticalTimelineElement
+                  key={`${d.title}-${i}`}
+                  date={d.date}
+                  iconStyle={{ background: "#ffffff", color: "#5ca9fb" }}
+                  contentArrowStyle={{ borderRight: "7px solid #ffffff" }}
+                >
+                  <h3 className="vertical-timeline-element-title">{d.title}</h3>
+                  <h4 className="vertical-timeline-element-subtitle">{d.company}</h4>
+                  <p>{d.description}</p>
+                </VerticalTimelineElement>
+              ))}
+            </VerticalTimeline>
+          ) : (
+            "loading"
+          )}
         </div>
       </div>
     </div>

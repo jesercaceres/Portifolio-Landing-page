@@ -1,4 +1,6 @@
 #experience {
+  --experience-marker-size: 15px;
+  --experience-marker-ring: 1px;
   padding: 100px 0;
   background: #f6f6f6;
 }
@@ -7,71 +9,41 @@
   margin-bottom: 60px;
 }
 
-.timeline {
-  position: relative;
-  max-width: 800px;
+#experience .vertical-timeline {
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding-top: 10px;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
+#experience .vertical-timeline::before {
   background: #e0e0e0;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  width: 50%;
-  padding-right: 40px;
-  text-align: right;
+#experience .vertical-timeline-element-icon {
+  width: var(--experience-marker-size);
+  height: var(--experience-marker-size);
+  margin-left: 0;
+  /* Center on the line in the 1-column layout (line center is 20px) */
+  left: calc(20px - (var(--experience-marker-size) / 2));
+  box-shadow: 0 0 0 var(--experience-marker-ring) #5ca9fb;
 }
 
-.timeline-item:nth-child(even) {
-  margin-left: 50%;
-  padding-right: 0;
-  padding-left: 40px;
-  text-align: left;
-}
-
-.timeline-dot {
-  position: absolute;
-  top: 15px;
-  right: -8px;
-  width: 16px;
-  height: 16px;
-  background: white;
-  border: 4px solid #5ca9fb;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-item:nth-child(even) .timeline-dot {
-  left: -8px;
-}
-
-.timeline-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+#experience .vertical-timeline-element-content {
+  background: #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  position: relative;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.timeline-content h3 {
+#experience .vertical-timeline-element-content h3 {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 20px;
   color: #333;
 }
 
-.timeline-content h4 {
+#experience .vertical-timeline-element-content h4 {
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 16px;
@@ -79,41 +51,62 @@
   font-weight: 600;
 }
 
-.timeline-date {
-  display: inline-block;
-  margin-bottom: 15px;
-  color: #5ca9fb;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.timeline-content p {
+#experience .vertical-timeline-element-content p {
   margin-bottom: 0;
   color: #777;
   line-height: 1.6;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .timeline::before {
-    left: 20px;
+#experience .vertical-timeline-element-date {
+  color: #5ca9fb;
+  font-weight: 600;
+  font-size: small;
+}
+
+@media (min-width: 1170px) {
+  #experience .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    left: 50%;
+    margin-left: calc(var(--experience-marker-size) / -2);
   }
-  
-  .timeline-item {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 0;
-    text-align: left;
+
+  #experience .vertical-timeline-element-content {
+    margin-left: 20px;
   }
-  
-  .timeline-item:nth-child(even) {
+
+  #experience .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content,
+  #experience .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content {
     margin-left: 0;
-    padding-left: 50px;
+    margin-right: 20px;
   }
-  
-  .timeline-dot,
-  .timeline-item:nth-child(even) .timeline-dot {
-    left: 12px;
-    right: auto;
+
+  #experience .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    text-align: left;
+    left: 112%;
+    top: calc(var(--experience-marker-size) / 2);
+    transform: translateY(-50%);
+    padding: 0;
+    line-height: 1;
+  }
+
+  #experience .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
+  #experience .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
+    text-align: right;
+    left: auto;
+    right: 112%;
+  }
+}
+
+@media (max-width: 768px) {
+  #experience {
+    --experience-marker-size: 18px;
+    --experience-marker-ring: 2px;
+  }
+
+  #experience .vertical-timeline {
+    padding-left: 0;
+  }
+
+  #experience .vertical-timeline-element-date {
+    color: #5ca9fb;
   }
 }
