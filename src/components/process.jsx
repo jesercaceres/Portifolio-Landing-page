@@ -1,13 +1,11 @@
-import React from "react";
-
-export const Process = (props) => {
+  export const Process = (props) => {
   return (
     <div id="process" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Como Funciona</h2>
           <p>
-            Um processo transparente e ágil, focado em entregar resultados sem dor de cabeça para você.
+            Roadmap completo de acordo com à necessidade do seu negócio.
           </p>
         </div>
         <div className="row">
